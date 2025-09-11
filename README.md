@@ -42,42 +42,43 @@ A full-stack **AI SaaS application** built with the MERN stack, providing free a
 
 ## ⚡ Getting Started
 
-1. **Clone the repository**
-    - git clone https://github.com/your-username/edge-ai.git
-    - cd ./Edge-Ai
+**1. Clone the repository**
+- git clone https://github.com/your-username/edge-ai.git
+- cd ./Edge-Ai
    
-2. **Install dependencies** (both frontend & backend)
-   - cd ./backend && npm install
-   - cd ../frontend && npm install
+**2. Install dependencies** (both frontend & backend)
+- cd ./backend && npm install
+- cd ../frontend && npm install
+  
    
-3. **Backend environment variables**
+**3. Backend environment variables**
    
-  - PORT=3000
-  - FRONTEND_URL=http://localhost:5173
+- PORT=3000
+- FRONTEND_URL=http://localhost:5173
     
-    ***Clerk***
-  - CLERK_SECRET_KEY=your_secret
-  - CLERK_PUBLISHABLE_KEY=your_publishable
+  ***Clerk***
+- CLERK_SECRET_KEY=your_secret
+- CLERK_PUBLISHABLE_KEY=your_publishable
   
-    ***Database***
-  - DATABASE_URL=your_neon_connection_url
+  ***Database***
+- DATABASE_URL=your_neon_connection_url
   
-  - ***APIs***
-  - GEMINI_API_KEY=your_gemini_key
-  - CLIPDROP_API_KEY=your_clipdrop_key
+  ***APIs***
+- GEMINI_API_KEY=your_gemini_key
+- CLIPDROP_API_KEY=your_clipdrop_key
   
-    ***Cloudinary***
-  - CLOUDINARY_CLOUD_NAME=your_cloud
-  - CLOUDINARY_API_KEY=your_api_key
-  - CLOUDINARY_API_SECRET=your_api_secret
+  ***Cloudinary***
+- CLOUDINARY_CLOUD_NAME=your_cloud
+- CLOUDINARY_API_KEY=your_api_key
+- CLOUDINARY_API_SECRET=your_api_secret
 
 
-4. **Frontend environment variables**
-  - VITE_CLERK_PUBLISHABLE_KEY=your_publishable
-  - VITE_BASE_URL=http://localhost:3000
+**4. Frontend environment variables**
+- VITE_CLERK_PUBLISHABLE_KEY=your_publishable
+- VITE_BASE_URL=http://localhost:3000
 
   
-5. **Run the app in development**
-   - cd ./backend && npm run server
-   - cd ../frontend && npm run dev
+**5. Run the app in development**
+- cd ./backend && npm run server
+- cd ../frontend && npm run dev
 
