@@ -11,7 +11,7 @@ import ReviewResume from "./pages/ReviewResume";
 import {Toaster} from 'react-hot-toast';
 import { useUser, SignIn, useAuth} from "@clerk/clerk-react";
 import { useEffect } from "react";
-import RemoveBg from "./pages/Removebg";
+import RemoveBg from "./pages/RemoveBg";
 
 
 
