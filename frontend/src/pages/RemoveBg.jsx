@@ -2,7 +2,7 @@ import { Eraser, Sparkles } from 'lucide-react';
 import React, { useState } from 'react'
 import { ApiData } from '../context/contextApi';
 
-function Removebg() {
+function RemoveBg() {
 
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -67,4 +67,4 @@ function Removebg() {
   )
 }
 
-export default Removebg;
+export default RemoveBg;

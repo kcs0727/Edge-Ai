@@ -6,12 +6,12 @@ import WriteArticle from "./pages/WriteArticle";
 import Blogtitles from "./pages/Blogtitles";
 import Community from "./pages/Community";
 import GenerateImg from "./pages/GenerateImg";
-import Removebg from "./pages/Removebg";
 import RemoveObj from "./pages/RemoveObj";
 import ReviewResume from "./pages/ReviewResume";
 import {Toaster} from 'react-hot-toast';
 import { useUser, SignIn, useAuth} from "@clerk/clerk-react";
 import { useEffect } from "react";
+import RemoveBg from "./pages/Removebg";
 
 
 
@@ -41,7 +41,7 @@ function App() {
 
           <Route path="generate-image" element={<GenerateImg />} />
 
-          <Route path="remove-background" element={<Removebg />} />
+          <Route path="remove-background" element={<RemoveBg />} />
 
           <Route path="remove-object" element={<RemoveObj />} />
 
