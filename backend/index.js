@@ -18,14 +18,13 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use(clerkMiddleware());
-app.use(requireAuth());
 
 
 app.get('/', (req, res) => {
     res.send('Server is Working!..')
 })
-app.use('/api/ai', aiRouter)
-app.use('/api/user',userRouter);
+app.use('/api/ai', requireAuth(), aiRouter)
+app.use('/api/user', requireAuth(), userRouter);
 
 
 app.listen(port, () => {
