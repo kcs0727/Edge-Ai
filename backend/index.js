@@ -14,19 +14,22 @@ const port = process.env.PORT;
 await connectCloudinary();
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL,                   
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 app.use(express.json());
 app.use(clerkMiddleware());
 
 
 app.get('/', (req, res) => {
-    res.send('Server is Working!..')
+  res.send('Server is Working!..')
 })
 app.use('/api/ai', requireAuth(), aiRouter)
 app.use('/api/user', requireAuth(), userRouter);
 
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`)
+  console.log(`Server running at http://localhost:${port}`)
 })

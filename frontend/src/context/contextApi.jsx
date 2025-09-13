@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 
 const ContextAPI = createContext();
 axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+axios.defaults.withCredentials = true;
 
 
 export const ContextProvider = ({ children }) => {
