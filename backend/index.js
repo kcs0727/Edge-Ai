@@ -23,6 +23,7 @@ const corsOptions={
 app.use(cors(corsOptions));
 app.options(/.*/,cors(corsOptions));
 
+
 app.use(express.json());
 app.use(clerkMiddleware());
 
@@ -30,8 +31,9 @@ app.use(clerkMiddleware());
 app.get('/', (req, res) => {
   res.send('Server is Working!..')
 })
-app.use('/api/ai', requireAuth(), aiRouter)
-app.use('/api/user', requireAuth(), userRouter);
+app.use(requireAuth());
+app.use('/api/ai', aiRouter)
+app.use('/api/user', userRouter);
 
 
 app.listen(port, () => {
